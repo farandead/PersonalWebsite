@@ -10,7 +10,7 @@ disqusShortname = "Faran"
 
 [markup.highlight]
 noClasses = false
-
+ 
 [params]
 author = "Faran Zafar"
  license = ''
