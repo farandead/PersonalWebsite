@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:52472/contact/</loc>
+    <lastmod>2024-05-20T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:52472/</loc>
+    <lastmod>2024-05-20T10:00:00+05:30</lastmod>
+  </url><url>
+    <loc>http://localhost:52472/authors/</loc>
+  </url><url>
+    <loc>http://localhost:52472/research/</loc>
+  </url><url>
+    <loc>http://localhost:52472/posts/</loc>
+  </url><url>
+    <loc>http://localhost:52472/categories/</loc>
+  </url><url>
+    <loc>http://localhost:52472/projects/</loc>
+  </url><url>
+    <loc>http://localhost:52472/series/</loc>
+  </url><url>
+    <loc>http://localhost:52472/tags/</loc>
+  </url>
+</urlset>
