@@ -14,3 +14,9 @@ This paper compares neuroevolution algorithms in robotics, focusing on connectio
 
 This paper explores the cutting stock problem in computational intelligence, studying the impact of immigration method and adaptive mutation rate.
 [Read more (PDF)](/pdf/cuttingproblem.pdf)
+
+
+## How to Host a Hugo Website Using GitHub and Netlify
+
+I recently built my own website and ran into some hiccups while deploying it, so I decided to write about my journey. If you want to host a Hugo site using GitHub and Netlify, this guide's got you covered! In the post, I talk about setting up a Hugo site, pushing it to GitHub, deploying with Netlify, setting up a custom domain with GoDaddy, and enabling TLS/SSL with a single click.
+[Read more (Medium)](https://medium.com/@faranzafar/how-to-host-a-hugo-website-using-github-and-netlify-along-with-your-custom-domain-for-free-7ad3b45960e1)
