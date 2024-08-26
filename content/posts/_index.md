@@ -4,6 +4,11 @@ description: "A collection of my personal research papers and blogs."
 ---
 Here is a selection of research papers and blogs that I have written. Please feel free to go over them :)
 
+## Adaptive Memory Enhancement: Augmentation and Self-Check Mechanisms in Retrieval Processes (AMRAG)
+
+This paper, developed in collaboration with Google DeepMind, presents the AMRAG framework for enhancing the accuracy and reliability of Retrieval-Augmented Generation (RAG) systems. It introduces dynamic query refinement and self-check mechanisms, significantly reducing hallucinations and increasing relevance.
+[Read more (PDF)](/pdf/amrag.pdf)
+
 ## Comparative Analysis of Neuroevolution Algorithms: Evolving Connection Weights versus Topology in Robotics Applications
 
 This paper compares neuroevolution algorithms in robotics, focusing on connection weights vs. topology. It evaluates their performance in various tasks, providing insights for future research.
