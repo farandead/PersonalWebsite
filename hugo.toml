@@ -78,7 +78,11 @@ icon = "fa-brands fa-medium fa-2x"
 weight = 5
 url = "https://medium.com/@faranzafar"
 
-
+[[params.social]]
+name = "CV"
+icon = "fa-solid fa-file-alt fa-2x"  # Using a generic file icon
+weight = 6
+url = "/pdf/cv.pdf"  # Replace with the actual URL of your CV
 
 [languages.en]
 languageName = ":uk:"
