@@ -17,6 +17,8 @@ Here is a selection of projects that I have worked on, spanning various aspects 
 ## [Stock Prediction](https://github.com/farandead/AI_Stock_Market)
 *A machine learning model based on long short-term memory (LSTM) sequential mode built with Keras for predicting stock prices. Integrated with Streamlit and Matplotlib for visualization and analysis of stock market trends.*
 
+## [Linux Utility Scripts](https://github.com/farandead/scriptingProject)
+*A collection of Python scripts developed for Linux systems, automating tasks such as network monitoring, code compilation, file transfer, and generating metadata for directories. These tools aim to streamline system management and enhance productivity for Linux users.*
 
 ## [Facial Recognition Attendence System](https://github.com/farandead/facial-recognition)
 *A facial recognition-based attendance system designed specifically for university students. Implemented using Python Flask and a facial recognition library, with a focus on convenience and accuracy for managing student attendance.*
