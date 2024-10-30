@@ -37,18 +37,18 @@ Here is a selection of projects that I have worked on, spanning various aspects 
 ## [Purijet](https://www.purijet.com/)
 *A Shopify e-commerce store designed to provide a seamless shopping experience with optimized product listings, responsive design, and an efficient checkout process.*
 
-## Mascot Official Store
+## [Mascot Official Store](https://faranzz.com/projects/)
 *An e-commerce store created on Shopify, previously focused on delivering a unique branded shopping experience. (This store has since been discontinued.)*
 
 ## [Facial Recognition Attendence System](https://github.com/farandead/myAiRegister)
 *A facial recognition-based attendance system designed specifically for university students. Implemented using Python Django and a facial recognition library, with a focus on convenience and accuracy for managing student attendance.*
 
-## PHP Projects 
+## [PHP Projects](https://faranzz.com/projects/)
 *A collection of my early PHP applications developed using the Laravel framework. These projects include features such as user authentication, role-based access control, database management, and integration with third-party APIs, showcasing foundational skills in efficient and scalable Laravel development.*
 
-- [Project 1](https://github.com/farandead/PC_Website)
-- [Project 2](https://github.com/farandead/SkyNet_Cinema_Website)
-- [Project 3](https://github.com/farandead/project3)
+- [Project](https://github.com/farandead/PC_Website)
+- [Project](https://github.com/farandead/SkyNet_Cinema_Website)
+- [Project](https://github.com/farandead/project3)
 
 
 
