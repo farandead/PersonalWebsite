@@ -12,6 +12,8 @@ Here is a selection of projects that I have worked on, spanning various aspects 
 
 ## [Linux Utility Scripts](https://github.com/farandead/scriptingProject)
 *A collection of Python scripts developed for Linux systems, automating tasks such as network monitoring, code compilation, file transfer, and generating metadata for directories. These tools aim to streamline system management and enhance productivity for Linux users.*
+## [Jiu-Jitsu Academy Website](https://github.com/farandead/sam-sam-jiu-jitsu) - [Live Site](https://6716e0b9249012f363c3e196--sam-sam-ji-jitsu.netlify.app/)
+*A React-based website currently under development for a jiu-jitsu academy, incorporating Firebase for real-time data handling and user authentication, along with Flask as the backend. This project includes features like class booking, schedule management, and user communication, aiming to provide a seamless experience for both students and instructors.*
 
 ## [Hunter and Prey RL](https://github.com/farandead/hunter-prey-rl)
 *An exploration into reinforcement learning techniques applied to game AI, specifically focusing on the Hunter and Prey scenario. Utilized Unity for game development and trained AI models using the Proximal Policy Optimization (PPO) algorithm.*
