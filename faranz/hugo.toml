@@ -1,4 +1,4 @@
-baseURL = "https://your-site.netlify.app"
+baseURL = "https://faranz.com"
 title = "Faran Zafar"
 theme = "hugo-coder"
 languageCode = "en"
@@ -76,3 +76,4 @@ url = "projects/"
 name = "Contact"
 weight = 3
 url = "contact/"
+
