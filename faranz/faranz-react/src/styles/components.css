@@ -284,8 +284,52 @@
 .tagline-text {
   font-size: 0.875rem;
   font-weight: 400;
-  color: var(--text-tertiary);
   letter-spacing: 0.01em;
+  position: relative;
+  color: #555;
+  background: linear-gradient(
+    110deg,
+    #555 0%,
+    #555 47%,
+    #000 49%,
+    #000 51%,
+    #555 53%,
+    #555 100%
+  );
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: taglineShimmer 200s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+[data-theme="dark"] .tagline-text {
+  color: #999;
+  background: linear-gradient(
+    110deg,
+    #999 0%,
+    #999 47%,
+    #fff 49%,
+    #fff 51%,
+    #999 53%,
+    #999 100%
+  );
+  background-size: 600% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes taglineShimmer {
+  0% {
+    background-position: -600% 0;
+  }
+  50% {
+    background-position: 600% 0;
+  }
+  100% {
+    background-position: -600% 0;
+  }
 }
 
 .tagline-separator {
@@ -316,6 +360,12 @@
   .name {
     animation: none;
     -webkit-text-fill-color: var(--text-primary);
+    background: none;
+  }
+  
+  .tagline-text {
+    animation: none;
+    -webkit-text-fill-color: var(--text-tertiary);
     background: none;
   }
 }
