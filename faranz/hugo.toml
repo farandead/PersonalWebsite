@@ -1,0 +1,78 @@
+baseURL = "https://your-site.netlify.app"
+title = "Faran Zafar"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 6
+enableEmoji = true
+
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Faran Zafar"
+description = "AI/ML Engineer specializing in LLM systems, multi-agent AI, and production-grade AI applications"
+keywords = "AI,ML,LLM,Multi-Agent Systems,RAG,Reinforcement Learning"
+info = ["AI/ML Engineer", "LLM Systems", "Multi-Agent AI"]
+avatarURL = "images/faranz.jpeg"
+dateFormat = "January 2, 2006"
+since = 2022
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+customCSS = []
+customSCSS = ["scss/custom.scss"]
+customJS = []
+customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/farandead"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 2
+url = "https://www.linkedin.com/in/faranzafar/"
+
+[[params.social]]
+name = "Medium"
+icon = "fa-brands fa-medium fa-2x"
+weight = 3
+url = "https://medium.com/@faranzafar"
+
+[[params.social]]
+name = "Instagram"
+icon = "fa-brands fa-instagram fa-2x"
+weight = 4
+url = "https://www.instagram.com/humangasorus/"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "Research"
+weight = 1
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 2
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Contact"
+weight = 3
+url = "contact/"
