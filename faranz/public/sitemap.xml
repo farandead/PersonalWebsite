@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:37365/authors/</loc>
+  </url><url>
+    <loc>http://localhost:37365/categories/</loc>
+  </url><url>
+    <loc>http://localhost:37365/contact/</loc>
+  </url><url>
+    <loc>http://localhost:37365/</loc>
+  </url><url>
+    <loc>http://localhost:37365/projects/</loc>
+  </url><url>
+    <loc>http://localhost:37365/posts/</loc>
+  </url><url>
+    <loc>http://localhost:37365/series/</loc>
+  </url><url>
+    <loc>http://localhost:37365/tags/</loc>
+  </url>
+</urlset>

@@ -1,0 +1,80 @@
+{{ define "content" }}
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-avatar">
+      <img src="/images/faranz.jpeg" alt="Faran Zafar" class="avatar-img">
+    </div>
+    
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="greeting">Hello, I'm</span>
+        <span class="name">Faran Zafar</span>
+      </h1>
+      
+      <div class="hero-tagline">
+        <span class="tagline-text">AI/ML Engineer</span>
+        <span class="tagline-separator">•</span>
+        <span class="tagline-text">LLM Systems</span>
+        <span class="tagline-separator">•</span>
+        <span class="tagline-text">Multi-Agent AI</span>
+      </div>
+      
+      <p class="hero-description">
+        Building production <span class="highlight">multi-agent systems</span> and <span class="highlight">RAG architectures</span> for enterprise applications. 
+        Specialized in agent orchestration, workflow management, and automated remediation systems that reduce MTTR from 1-2 hours to few minutes and significantly increase Ops productivity.
+      </p>
+    </div>
+  </div>
+  
+  <div class="expertise-section">
+    <h2 class="section-title">What I Do</h2>
+    
+    <div class="expertise-grid">
+      <div class="expertise-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+        <h3>Multi-Agent Orchestration</h3>
+        <p>Production multi-agent systems with agent orchestration, task decomposition, and supervisor agents. Implementing workflow management and shared memory for complex task coordination.</p>
+      </div>
+      
+      <div class="expertise-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>RAG & LLM Systems</h3>
+        <p>Production RAG architectures with hybrid retrieval and query routing. Building enterprise LLM applications with prompt injection prevention and prompt tanting.</p>
+      </div>
+      
+      <div class="expertise-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3>Automated Operations</h3>
+        <p>Agentic systems for fleet management and automated remediation. Reduced MTTR from 1-2 hours to few minutes and significantly increased productivity of Ops teams through intelligent automation.</p>
+      </div>
+      
+      <div class="expertise-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h3>Reinforcement Learning</h3>
+        <p>Multi-agent RL systems with PPO and CTDE architectures. Training intelligent agents for game AI, robotics, and autonomous systems with curriculum learning.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="social-section">
+    <h2 class="section-title">Connect</h2>
+    
+    <div class="social-links">
+      {{ range .Site.Params.social }}
+      <a href="{{ .url }}" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="{{ .name }}">
+        <i class="{{ .icon }}"></i>
+        <span class="social-name">{{ .name }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

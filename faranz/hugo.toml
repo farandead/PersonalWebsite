@@ -1,0 +1,86 @@
+baseURL = "http://www.faranzz.com"
+title = "Faran Zafar"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 6
+enableEmoji = true
+
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+author = "Faran Zafar"
+license = ''
+description = "AI/ML Engineer specializing in Large Language Models, Multi-Agent Systems, and Autonomous AI"
+keywords = "AI,ML,LLM,GPT,machine learning,deep learning,multi-agent systems,autonomous agents,reinforcement learning,NLP,transformers"
+info = ["AI/ML Engineer", "LLM & Multi-Agent Systems Specialist"]
+avatarURL = "images/faranz.jpeg"
+gravatar = "faranzafarcs@gmail.com"
+dateFormat = "January 2, 2006"
+since = 2023
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+# Custom CSS/SCSS for the sleek AI-themed design
+customCSS = []
+customSCSS = ["scss/custom.scss"]
+customJS = []
+customRemoteJS = []
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/farandead/"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 2
+url = "https://www.linkedin.com/in/faranzafar/"
+
+[[params.social]]
+name = "Medium"
+icon = "fa-brands fa-medium fa-2x"
+weight = 3
+url = "https://medium.com/@faranzafar"
+
+[[params.social]]
+name = "Instagram"
+icon = "fa-brands fa-instagram fa-2x"
+weight = 4
+url = "https://www.instagram.com/humangasorus/"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 1
+url = "/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 2
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Research"
+weight = 3
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Contact"
+weight = 4
+url = "contact/"
