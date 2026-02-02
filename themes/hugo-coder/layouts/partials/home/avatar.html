@@ -1,8 +1,0 @@
-{{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
-  {{ with .Site.Params.avatarURL }}
-    <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
-  {{ end }}
-{{ end }}
-{{ with .Site.Params.gravatar }}
-  <div class="avatar"><img src="https://i.imgur.com/59k31UK.jpg" alt="gravatar"></div>
-{{ end }}
