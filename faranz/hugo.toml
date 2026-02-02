@@ -61,6 +61,13 @@ url = "https://www.instagram.com/humangasorus/"
 
 [languages.en]
 languageName = ":uk:"
+title = "Faran Zafar"
+
+[languages.en.params]
+author = "Faran Zafar"
+description = "AI/ML Engineer specializing in LLM systems, multi-agent AI, and production-grade AI applications"
+keywords = "AI,ML,LLM,Multi-Agent Systems,RAG,Reinforcement Learning"
+info = ["AI/ML Engineer", "LLM Systems", "Multi-Agent AI"]
 
 [[languages.en.menu.main]]
 name = "Research"
@@ -76,4 +83,3 @@ url = "projects/"
 name = "Contact"
 weight = 3
 url = "contact/"
-
