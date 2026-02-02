@@ -15,8 +15,8 @@ const projects = [
   },
   {
     year: '2025',
-    title: 'flashbits – Swipe-Based Coding Interview Prep',
-    subtitle: 'Sold. AI-powered mobile learning platform for technical interview preparation',
+    title: 'flashbits (Sold) – Swipe-Based Coding Interview Prep',
+    subtitle: 'AI-powered mobile learning platform for technical interview preparation',
     description: 'Built swipe-based learning platform with AI-generated quizzes, AI assistant for personalized guidance, and spaced repetition algorithms. Features gamification with XP system and achievement ranks, comprehensive progress analytics, company-specific question filtering, and 1,700+ curated DSA problems in multiple-choice format. Implemented intelligent question recommendation engine and performance tracking across 14 topic categories.',
     tags: ['AI-Generated Quizzes', 'AI Assistant', 'Spaced Repetition', 'Gamification', 'Mobile App', 'React Native'],
   },
