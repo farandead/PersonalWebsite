@@ -1,3 +1,5 @@
+import React from 'react';
+
 const experiences = [
   {
     company: 'RealityMine',
@@ -7,7 +9,7 @@ const experiences = [
     bullets: [
       'Built agentic server automation, cutting MTTR from ~60 min to minutes; saved ~£500k in manual hours',
       'Automated client configuration via internal agentic tooling, saving ~350+ hours/year by standardizing repeatable setups',
-      'Optimized 600GB/day data pipeline, improving throughput by 86%',
+      'Optimized 600 GB/day data pipeline, improving throughput by 86%',
       'Reduced legacy system alarms/crashes by ~95%',
     ],
     logo: 'fa-solid fa-code',
@@ -43,10 +45,37 @@ const education = [
     location: 'Birmingham, UK',
     degree: 'BSc in Computer Science',
     period: 'Sept 2021 – Sept 2024',
-    description: 'First Class Honours. Distinction in: DSA in Java, OOP, Computer Systems, AI, Data Mining, Game Development, Information Security, Software Project Management, Secure Network Services',
+    description: 'First Class Honours (4.0 GPA). Distinction in: DSA in Java, OOP, Computer Systems, AI, Data Mining, Game Development, Information Security, Software Project Management, Secure Network Services',
     logo: 'fa-solid fa-graduation-cap',
   },
 ];
+
+const highlightNumbers = (text: string) => {
+  // Match numbers including percentages, currency, and numbers with symbols
+  const numberRegex = /(£?~?\d+[.,]?\d*[%kKGB+\-]?|~?£\d+[.,]?\d*[kKGB]?)/g;
+  const parts: (string | React.ReactElement)[] = [];
+  let lastIndex = 0;
+  let match;
+  
+  while ((match = numberRegex.exec(text)) !== null) {
+    // Add text before the match
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    // Add the highlighted number
+    parts.push(
+      <span key={match.index} className="number-highlight">{match[0]}</span>
+    );
+    lastIndex = match.index + match[0].length;
+  }
+  
+  // Add remaining text
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+  
+  return parts.length > 0 ? parts : text;
+};
 
 export default function Experience() {
   return (
@@ -64,7 +93,7 @@ export default function Experience() {
             <p className="pub-subtitle">{exp.company} • {exp.location}</p>
             <ul className="experience-bullets">
               {exp.bullets.map((bullet, bulletIndex) => (
-                <li key={bulletIndex}>{bullet}</li>
+                <li key={bulletIndex}>{highlightNumbers(bullet)}</li>
               ))}
             </ul>
           </div>
@@ -82,7 +111,7 @@ export default function Experience() {
           <div className="pub-content">
             <h3>{edu.degree}</h3>
             <p className="pub-subtitle">{edu.institution} • {edu.location}</p>
-            <p className="pub-abstract">{edu.description}</p>
+            <p className="pub-abstract">{highlightNumbers(edu.description)}</p>
           </div>
         </div>
       ))}

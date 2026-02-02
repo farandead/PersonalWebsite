@@ -103,6 +103,8 @@ export default function Home() {
             <span className="tagline-text">LLM Systems</span>
             <span className="tagline-separator">•</span>
             <span className="tagline-text">Multi-Agent AI</span>
+            <span className="tagline-separator">•</span>
+            <span className="tagline-text">6x Hackathon Winner</span>
           </div>
           
           <p className="hero-description">
@@ -145,6 +147,28 @@ export default function Home() {
               <i className={link.icon}></i>
             </a>
           ))}
+          <div className="cv-link-wrapper">
+            <a
+              href="/pdf/cv.pdf"
+              className="social-link cv-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('/pdf/cv.pdf', '_blank');
+              }}
+              aria-label="View CV"
+            >
+              <i className="fa-solid fa-file-pdf"></i>
+            </a>
+            <div className="cv-pointer">
+              <span className="cv-pointer-text">my CV</span>
+              <svg className="cv-pointer-arrow" width="20" height="16" viewBox="0 0 20 16">
+                <path d="M 16 2 C 12 4, 8 6, 10 12" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
+                <path d="M 7 10 L 10 13 L 13 10" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </section>
