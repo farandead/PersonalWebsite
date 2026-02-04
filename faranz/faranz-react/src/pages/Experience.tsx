@@ -7,7 +7,7 @@ const experiences = [
     position: 'Software Engineer',
     period: 'Dec 2024 – Present',
     bullets: [
-      'Built agentic server automation, cutting MTTR from ~60 min to minutes; saved ~£500k in manual hours',
+      'Built agentic server automation, cutting MTTR from ~60 min to few minutes; saved ~£500k in manual hours',
       'Automated client configuration via internal agentic tooling, saving ~350+ hours/year by standardizing repeatable setups',
       'Optimized 600 GB/day data pipeline, improving throughput by 86%',
       'Reduced legacy system alarms/crashes by ~95%',
