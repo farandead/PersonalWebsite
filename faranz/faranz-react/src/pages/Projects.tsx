@@ -3,18 +3,19 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 const projects = [
   {
     year: '2025',
-    title: 'Urlybird – Agentic Web Traffic to Structured Events',
+    name: 'Urlybird',
+    brief: 'Agentic Web Traffic to Structured Events',
     subtitle: 'Built for RealityMine. MCP server enabling AI agents to autonomously analyse web traffic, generate extraction code, and produce structured event datasets',
-    description: 'Production MCP server exposing 7 tools to AI agents (Claude, etc.) over stdio and SSE. Agentic pipeline: search_traffic → generate_rules → execute_polars_filter → get_capture_code_prompt → execute_capture_code → transform_to_events. AI-generated Python capture functions run in a sandboxed runtime (restricted builtins, whitelisted imports). Structured prompt injection via expected_fields.json ensures consistent schema output across services. Implements BM25 retrieval, context-window optimisation with compact responses and output truncation, and unified event CSV as the output contract.',
-    tags: ['MCP Server', 'Agentic Pipeline', 'AI-Generated Code', 'Sandboxed Execution', 'Polars', 'SQLite/FTS5', 'Starlette', 'Python'],
+    description: 'MCP server with 7 tools for AI agents over stdio/SSE. Sandboxed execution of AI-generated Python capture code; BM25 retrieval and context-window optimisation.',
+    tags: ['MCP Server', 'AI-Generated Code', 'Sandboxed Execution', 'Polars', 'SQLite/FTS5', 'Starlette', 'Python'],
   },
   {
     year: '2025',
-    title: 'Nova – AI Document Management for Accountants',
+    name: 'Nova',
+    brief: 'AI Document Management for Accountants',
     subtitle: 'Won Saturn Hackathon. Scaling to startup (MVP phase). AI Operating System for Accountants',
     description: 'Multi-agent autonomous system for accounting firms with automated document processing and compliance validation. Features AI-powered data extraction, built-in VAT validation, duplicate detection, and AI chat assistant with tool calling. Implements automated chaser emails, secure upload portals, and full audit trail with entity tracking.',
     tags: ['Multi-Agent Systems', 'Claude AI', 'OCR', 'Compliance', 'Tool Calling'],
-    year: '2025',
   },
   {
     name: 'Katsu',
