@@ -1,9 +1,14 @@
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-  
   return (
     <footer className="footer">
-      <p>© {currentYear} FZ. All rights reserved.</p>
+      <span className="footer-left">&copy; {new Date().getFullYear()} Faran Zafar</span>
+      <span className="footer-right">
+        <a href="https://github.com/farandead" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/faranzafar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+        <a href="https://medium.com/@faranzafar" target="_blank" rel="noopener noreferrer">Medium</a>
+      </span>
     </footer>
   );
 }
