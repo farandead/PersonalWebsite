@@ -2,7 +2,6 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const projects = [
   {
-<<<<<<< HEAD
     year: '2025',
     title: 'Urlybird – Agentic Web Traffic to Structured Events',
     subtitle: 'Built for RealityMine. MCP server enabling AI agents to autonomously analyse web traffic, generate extraction code, and produce structured event datasets',
@@ -13,11 +12,6 @@ const projects = [
     year: '2025',
     title: 'Nova – AI Document Management for Accountants',
     subtitle: 'Won Saturn Hackathon. Scaling to startup (MVP phase). AI Operating System for Accountants',
-=======
-    name: 'Nova',
-    brief: 'AI Document Management',
-    subtitle: 'Won Saturn Hackathon.',
->>>>>>> e35f21f99b99746c42e8242b073dbd47fb042f3d
     description: 'Multi-agent autonomous system for accounting firms with automated document processing and compliance validation. Features AI-powered data extraction, built-in VAT validation, duplicate detection, and AI chat assistant with tool calling. Implements automated chaser emails, secure upload portals, and full audit trail with entity tracking.',
     tags: ['Multi-Agent Systems', 'Claude AI', 'OCR', 'Compliance', 'Tool Calling'],
     year: '2025',
