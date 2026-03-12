@@ -1,0 +1,147 @@
+
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+\definecolor{linkcol}{RGB}{0,0,0}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkcol,
+  linkcolor=linkcol
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section styling (similar to screenshot: small caps + rule)
+\titleformat{\section}
+  {\scshape\large\raggedright}
+  {}{0pt}{}[\vspace{-4pt}\titlerule\vspace{4pt}]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Lists
+\setlist[itemize]{leftmargin=*, topsep=0.5pt, itemsep=0.5pt, parsep=0pt, partopsep=0pt}
+
+% Helpers
+\newcommand{\cvname}[1]{\textbf{\LARGE #1}}
+\newcommand{\cvmeta}[1]{\small #1}
+\newcommand{\cventry}[4]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textit{#2} \\
+    #3 & \textit{#4} \\
+  \end{tabular*}\vspace{2pt}
+}
+\newcommand{\cventryone}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textit{#2} \\
+    #3 & \\
+  \end{tabular*}\vspace{2pt}
+}
+\newcommand{\cvsubheading}[4]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & \textit{#2} \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{2pt}
+}
+\newcommand{\cvproject}[2]{\textbf{#1} \hfill \textit{#2}\vspace{2pt}}
+\newcommand{\smallgap}{\vspace{1.0pt}}
+
+\begin{document}
+
+% ===== Header =====
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+  \cvname{Faran Zafar} & \cvmeta{\href{mailto:faranzafarcs@gmail.com}{faranzafarcs@gmail.com}} \\
+  \cvmeta{Birmingham, UK \;|\; (+44) 7355-889332 \;|\; \href{https://faranz.com}{faranz.com}} & \cvmeta{} \\
+\end{tabular*}
+\vspace{2pt}
+
+% ===== Experience =====
+\section{Experience}
+
+
+\cventry{Founder \& CTO}{2025 -- Present}{Ovalens (\href{https://ovalens.com}{ovalens.com}), London, UK}{}
+\begin{itemize}
+  \item Built a full-stack production platform (\(\sim\)29K LOC) with Next.js, FastAPI, and shared services in a monorepo.
+  \item Implemented a deterministic UK tax engine (16 modules) incl. income tax (ENG/SCO), NI, AA, HICBC, loans, ANI, BED/ISA.
+  \item Shipped Claude-powered chat (streaming) with 6 tools for modelling, dashboards, and note search.
+  \item Delivered 30+ REST APIs, async processing via Redis, 80+ tests, and production observability with Sentry + metrics.
+\end{itemize}
+\smallgap
+
+\cventry{Software Engineer}{Dec 2024 -- Present}{RealityMine, Manchester, UK}{}
+\begin{itemize}
+  \item Built production backend automation for critical server diagnostics, cutting MTTR from \(\sim\)60 minutes to minutes (estimated \(\sim\)\pounds500k in manual hours).
+  \item Built customer-facing configuration workflows, saving \(\sim\)350+ hours/year through reliable end-to-end automation.
+  \item Optimized a \(\sim\)600GB/day data pipeline, improving throughput by \(\sim\)86\%.
+  \item Reduced legacy system alarms/crashes by \(\sim\)95\% through reliability improvements.
+\end{itemize}
+\smallgap
+
+\cventry{Research Intern}{Jul 2024 -- Aug 2024}{Google DeepMind, Birmingham, UK}{}
+\begin{itemize}
+  \item Co-developed the Adaptive Memory RAG (AMRAG) framework integrating self-checks and web search, improving response accuracy by 88\%.
+  \item Applied decomposition, QA context generation, hallucination detection, and retrieval augmentation.
+  \item Achieved sub-5-second response times, outperforming standard RAG baselines.
+\end{itemize}
+\smallgap
+
+\cventry{Teaching Assistant (College of Engineering and Physical Sciences)}{Oct 2023 -- Jul 2024}{Aston University, Birmingham, UK}{}
+\begin{itemize}
+  \item Mentored 10+ student teams (6 members each) in OOP, emphasizing best practices.
+  \item Led 8+ hands-on workshops on advanced OOP topics (30--50 students per session).
+\end{itemize}
+
+% ===== Education =====
+\section{Education}
+
+\cventryone{Aston University, Birmingham, UK}{Sep 2021 -- Sep 2024}{BSc Computer Science \;\textit{(First Class Honours, 4.0 GPA)}}%
+
+% ===== Skills =====
+\section{Skills \& Certifications}
+
+\textbf{GenAI:} AWS Bedrock, LangChain/LangGraph, LlamaIndex, tool calling, structured outputs, prompt-injection mitigation, RAG, Pinecone, pgvector \\
+\textbf{Stack:} FastAPI, Django, Flask, Spring Boot; React, Next.js \\
+\textbf{Infra/Data:} AWS, Docker, Linux, CI/CD pipelines; PostgreSQL, MySQL, MongoDB; Firebase, Redis, RabbitMQ \\
+\textbf{Languages/Certs:} Python, Java, JavaScript, C\#, PHP, C++; Google Cybersecurity Certificate; AWS Solutions Architect (in progress)
+
+% ===== Projects =====
+\section{Projects}
+
+
+\cvproject{Katsu}{}
+\begin{itemize}
+  \item Built a production operations platform cutting MTTR from 1--2 hours to minutes with automated verification and workflow orchestration.
+  \item Implemented secure multi-agent remediation (prompt-injection defense, SSH session pooling) and optimized runtime to \(\sim\)\$0.02/request for always-on alarm resolution.
+\end{itemize}
+\smallgap
+
+\cvproject{Nova}{}
+\begin{itemize}
+  \item Multi-agent automation platform for accounting firms: document processing, data extraction, and compliance checks.
+  \item Includes VAT validation, duplicate detection, tool-calling assistant, and an end-to-end audit trail with entity tracking.
+\end{itemize}
+\smallgap
+
+\cvproject{Flashbits \,(Sold)}{}
+\begin{itemize}
+  \item Swipe-based mobile interview prep app with AI-generated quizzes, spaced repetition, and a recommendation engine across 14 DSA topic categories.
+  \item Gamified XP/ranks, analytics dashboard, and company-specific filtering; shipped 1{,}700+ curated MCQ-style problems.
+\end{itemize}
+\smallgap
+
+
+
+\vfill
+\cvmeta{More projects at \href{https://faranz.com}{faranz.com}; Ovalens at \href{https://ovalens.com}{ovalens.com}.}
+
+\end{document}
