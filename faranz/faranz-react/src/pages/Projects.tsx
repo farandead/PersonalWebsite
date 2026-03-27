@@ -2,6 +2,44 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const projects = [
   {
+    year: '2026',
+    name: 'Donald',
+    brief: 'Voice “roast” + CV coaching',
+    subtitle:
+      '~40k views in 72 hours, 300+ users, $4.1M+ in tuition left in shambles. Voice-first CV coach with Firecrawl research and ElevenLabs.',
+    description:
+      'PostgreSQL for accounts and CV artifacts; Redis for rate limits, session voice-activity, and dedupe; Celery workers drain Redis-backed queues for Firecrawl research and analysis off the hot path. FastAPI and Next.js with Claude and ElevenLabs.',
+    tags: [
+      'FastAPI',
+      'Next.js',
+      'PostgreSQL',
+      'Redis',
+      'Celery',
+      'Claude',
+      'ElevenLabs',
+      'Firecrawl',
+    ],
+  },
+  {
+    year: '2025',
+    name: 'Fixie',
+    brief: 'Manuals → voice-enabled walkthroughs',
+    subtitle:
+      'Turns PDFs and URLs into guided, visual repair and assembly walkthroughs—durable storage, Redis-backed queues, and workers for long jobs.',
+    description:
+      'PostgreSQL for tutorials and metadata; Redis broker and Celery workers for PDF parsing, renders, and slow Replicate video jobs; object storage for media. FastAPI and Next.js with Claude, Firecrawl, and ElevenLabs.',
+    tags: [
+      'FastAPI',
+      'Next.js',
+      'PostgreSQL',
+      'Redis',
+      'Celery',
+      'Claude',
+      'ElevenLabs',
+      'Firecrawl',
+    ],
+  },
+  {
     year: '2025',
     name: 'Urlybird',
     brief: 'Agentic Web Traffic to Structured Events',

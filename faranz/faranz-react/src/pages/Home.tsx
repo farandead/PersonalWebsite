@@ -425,7 +425,7 @@ export default function Home() {
               <i className={link.icon} />
             </motion.a>
           ))}
-          {/* <motion.a
+          <motion.a
             href="/pdf/cv.pdf"
             className="social-icon cv-icon"
             target="_blank"
@@ -435,7 +435,7 @@ export default function Home() {
           >
             <i className="fa-solid fa-file-pdf" />
             <span>CV</span>
-          </motion.a> */}
+          </motion.a>
         </motion.div>
       </section>
     </div>

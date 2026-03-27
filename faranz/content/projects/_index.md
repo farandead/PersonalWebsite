@@ -10,6 +10,62 @@ Production-grade AI and machine learning projects, from LLM applications to rein
 </div>
 
 <div class="publication-card">
+<div class="pub-year">2026</div>
+<div class="pub-content">
+<h3>Donald – Voice &ldquo;roast&rdquo; + CV Coaching</h3>
+<p class="pub-subtitle">~40k views in 72 hours, 300+ users, $4.1M+ in tuition left in shambles. Voice-first CV coach with Firecrawl research and ElevenLabs.</p>
+<p class="pub-abstract">PostgreSQL for accounts and CV artifacts; Redis for rate limits, session voice-activity, and dedupe; Celery workers drain Redis-backed queues for Firecrawl research and analysis off the hot path. FastAPI and Next.js with Claude and ElevenLabs.</p>
+<div class="pub-tags">
+<span>FastAPI</span>
+<span>Next.js</span>
+<span>PostgreSQL</span>
+<span>Redis</span>
+<span>Celery</span>
+<span>Claude</span>
+<span>ElevenLabs</span>
+<span>Firecrawl</span>
+</div>
+</div>
+</div>
+
+<div class="publication-card">
+<div class="pub-year">2025</div>
+<div class="pub-content">
+<h3>Fixie – Manuals to Guided Walkthroughs</h3>
+<p class="pub-subtitle">Turns PDFs and URLs into guided, visual repair and assembly walkthroughs—durable storage, Redis-backed queues, and workers for long jobs.</p>
+<p class="pub-abstract">PostgreSQL for tutorials and metadata; Redis broker and Celery workers for PDF parsing, renders, and slow Replicate video jobs; object storage for media. FastAPI and Next.js with Claude, Firecrawl, and ElevenLabs.</p>
+<div class="pub-tags">
+<span>FastAPI</span>
+<span>Next.js</span>
+<span>PostgreSQL</span>
+<span>Redis</span>
+<span>Celery</span>
+<span>Claude</span>
+<span>ElevenLabs</span>
+<span>Firecrawl</span>
+</div>
+</div>
+</div>
+
+<div class="publication-card">
+<div class="pub-year">2025</div>
+<div class="pub-content">
+<h3>Urlybird – Agentic Web Traffic to Structured Events</h3>
+<p class="pub-subtitle">Built for RealityMine. MCP server enabling AI agents to autonomously analyse web traffic, generate extraction code, and produce structured event datasets</p>
+<p class="pub-abstract">MCP server with 7 tools for AI agents over stdio/SSE. Sandboxed execution of AI-generated Python capture code; BM25 retrieval and context-window optimisation.</p>
+<div class="pub-tags">
+<span>MCP Server</span>
+<span>AI-Generated Code</span>
+<span>Sandboxed Execution</span>
+<span>Polars</span>
+<span>SQLite/FTS5</span>
+<span>Starlette</span>
+<span>Python</span>
+</div>
+</div>
+</div>
+
+<div class="publication-card">
 <div class="pub-year">2025</div>
 <div class="pub-content">
 <h3>Nova – AI Document Management for Accountants</h3>
