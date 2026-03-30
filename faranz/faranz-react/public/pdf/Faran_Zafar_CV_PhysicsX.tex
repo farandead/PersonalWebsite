@@ -71,11 +71,10 @@
 
 \cventry{Founder \& CTO}{2025 -- Present}{Ovalens (\href{https://ovalens.com}{ovalens.com}), London, UK}{}
 \begin{itemize}
-  \item Built a full-stack production platform (\(\sim\)29K LOC) with Next.js, FastAPI, and shared services in a monorepo.
   \item Raised \pounds7k through a hackathon win.
   \item Implemented a deterministic UK tax engine (16 modules) incl. income tax (ENG/SCO), NI, AA, HICBC, loans, ANI, BED/ISA.
   \item Shipped Claude-powered chat (streaming) with 6 tools for modelling, dashboards, and note search.
-  \item Delivered 30+ REST APIs, async processing via Redis, 80+ tests, and production observability with Sentry + metrics.
+  \item Delivered 30+ REST APIs, async processing via Redis, 280+ tests, and production observability with Sentry + metrics.
 \end{itemize}
 \smallgap
 
@@ -128,9 +127,8 @@
 
 \cvproject{GetOut}{}
 \begin{itemize}
-  \item Full-stack conversational ``social wingman'' (voice + text): npm-workspace monorepo with Next.js~14 App Router and a single Cloudflare Worker (REST, queue consumers, agent webhook); D1, Vectorize user embeddings (\texttt{@cf/baai/bge-base-en-v1.5}), 3 Durable Object classes, 2 batched Queues, Workers AI bindings.
-  \item Tool-calling agent layer: 5 server tools (multi-source event search across 3 plugins---Workers AI, static, Eventbrite---preferences, commitments, Vectorize top-$K$ compatibility, Durable Object conversation state); JWT/OAuth/Firebase auth paths; webhook-secret tool routes; Sentry on worker and web.
-  \item Voice UX via ElevenLabs ConvAI; LLM eval harness: 10 scenario-driven runs, structured LLM-as-judge (5 rubric dimensions) on Llama~3.1~8B Instruct, results in D1; \(\sim\)6k LOC application TypeScript across web, worker, and shared packages.
+  \item Conversational ``social wingman'' (voice/text): Next.js~14 + Cloudflare Worker; D1, Vectorize embeddings, 3 Durable Objects, 2 Queues, Workers AI.
+  \item Tool-calling agent (5 tools, 3 event plugins), OAuth/JWT/Firebase + webhook routes, Sentry; ElevenLabs; LLM-as-judge eval (Llama~3.1~8B) to D1.
 \end{itemize}
 \smallgap
 
@@ -138,13 +136,6 @@
 \begin{itemize}
   \item Built a production operations platform cutting MTTR from 1--2 hours to minutes with automated verification and workflow orchestration.
   \item Implemented secure multi-agent remediation (prompt-injection defense, SSH session pooling) and optimized runtime to \(\sim\)\$0.02/request for always-on alarm resolution.
-\end{itemize}
-\smallgap
-
-\cvproject{Nova}{}
-\begin{itemize}
-  \item Multi-agent automation platform for accounting firms: document processing, data extraction, and compliance checks.
-  \item Includes VAT validation, duplicate detection, tool-calling assistant, and an end-to-end audit trail with entity tracking.
 \end{itemize}
 \smallgap
 
