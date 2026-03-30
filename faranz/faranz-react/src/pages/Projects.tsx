@@ -21,6 +21,25 @@ const projects = [
     ],
   },
   {
+    year: '2026',
+    name: 'GetOut',
+    brief: 'Voice + text “social wingman”',
+    subtitle:
+      'Full-stack conversational product: event discovery, commitments, embedding-based user similarity, optional group coordination, and an LLM tool-calling backend on Cloudflare’s edge.',
+    description:
+      'npm-workspace monorepo: Next.js 14 App Router and a single Cloudflare Worker (REST, queue consumers, agent webhook). D1 for users, events, commitments, eval, and analytics; Vectorize with Workers AI embeddings (@cf/baai/bge-base-en-v1.5); three Durable Object classes; two batched Queues. Five server-registered agent tools across three event plugins (Workers AI, static, Eventbrite). JWT/OAuth/Firebase auth, webhook-secret tool routes, Sentry on worker and web. ElevenLabs ConvAI for voice UX; eval harness with ten scenarios and LLM-as-judge (five rubric dimensions, Llama 3.1 8B Instruct) persisted to D1.',
+    tags: [
+      'Next.js',
+      'Cloudflare Workers',
+      'D1',
+      'Vectorize',
+      'Durable Objects',
+      'Workers AI',
+      'Tool Calling',
+      'ElevenLabs',
+    ],
+  },
+  {
     year: '2025',
     name: 'Fixie',
     brief: 'Manuals → voice-enabled walkthroughs',
