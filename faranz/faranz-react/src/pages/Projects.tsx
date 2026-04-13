@@ -40,7 +40,7 @@ const projects = [
     ],
   },
   {
-    year: '2025',
+    year: '2026',
     name: 'Fixie',
     brief: 'Manuals → voice-enabled walkthroughs',
     subtitle:
@@ -59,7 +59,7 @@ const projects = [
     ],
   },
   {
-    year: '2025',
+    year: '2026',
     name: 'Urlybird',
     brief: 'Agentic Web Traffic to Structured Events',
     subtitle: 'Built for RealityMine. MCP server enabling AI agents to autonomously analyse web traffic, generate extraction code, and produce structured event datasets',
@@ -67,7 +67,7 @@ const projects = [
     tags: ['MCP Server', 'AI-Generated Code', 'Sandboxed Execution', 'Polars', 'SQLite/FTS5', 'Starlette', 'Python'],
   },
   {
-    year: '2025',
+    year: '2026',
     name: 'Nova',
     brief: 'AI Document Management for Accountants',
     subtitle: 'Won Saturn Hackathon. Scaling to startup (MVP phase). AI Operating System for Accountants',
@@ -80,7 +80,7 @@ const projects = [
     subtitle: 'Built at RealityMine. LLM-powered agentic fleet management.',
     description: 'Features complete CLI interface, Slack integration with webhook handlers, and automated alarm remediation workflows. Reduced MTTR from 1-2 hours to minutes. Implements tool use with function calling, multi-agent architecture with verifier agents, prompt injection prevention, HITL confirmation workflows, and persistent SSH session pooling.',
     tags: ['AWS Bedrock', 'LangChain', 'Multi-Agent', 'Prompt Tanting'],
-    year: '2025',
+    year: '2026',
   },
   {
     name: 'flashbits',
@@ -88,7 +88,7 @@ const projects = [
     subtitle: 'Sold. AI-powered swipe-based mobile learning platform.',
     description: 'Swipe-based learning platform with AI-generated quizzes, AI assistant for personalized guidance, and spaced repetition algorithms. Features gamification with XP system and achievement ranks, comprehensive progress analytics, and 1,700+ curated DSA problems. Implemented intelligent question recommendation engine and performance tracking across 14 topic categories.',
     tags: ['AI Assistant', 'Spaced Repetition', 'React Native', 'Gamification'],
-    year: '2025',
+    year: '2026',
   },
   {
     name: 'Arc',
