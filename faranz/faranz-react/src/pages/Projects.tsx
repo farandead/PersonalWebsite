@@ -8,7 +8,7 @@ const projects = [
     subtitle: 'Open-source, local-first tool that catches malicious packages before you install them — with provenance verification, compound risk scoring, and AI-native MCP integration.',
     description: 'Multi-phase analysis pipeline: metadata heuristics, typosquatting detection (Levenshtein + homoglyphs), Sigstore provenance verification, AST-based behavioral analysis, obfuscation detection, and dependency tree walking. ~45 tokens/package for AI context efficiency. 138+ tests including red-team attack simulations. Catches zero-day patterns like the axios and chalk/debug compromises.',
     tags: ['TypeScript', 'MCP Server', 'AST Analysis', 'Sigstore', 'Supply Chain Security', 'Open Source'],
-    link: 'https://github.com/zafarfaran/chainwatch',
+    link: 'https://watchman-rust.vercel.app/',
   },
   {
     year: '2026',
