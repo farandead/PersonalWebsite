@@ -8,14 +8,40 @@ const experiences = [
     position: 'Software Engineer',
     period: 'Dec 2024 \u2013 Present',
     bullets: [
-      'Built agentic server alarm and diagnostic automation, cutting MTTR from ~60 min to few minutes; saved 1000+ in manual hours',
-      'Automated client configuration via internal agentic tooling, saving ~350+ hours/year by standardizing repeatable setups',
+      'Built an AI-powered server management and diagnostics tool that autonomously triages errors and runs remediation, cutting MTTR from ~60 min to minutes',
+      'Built an agentic automation tool that converts raw web-traffic captures into extraction code, eliminating ~20 hours/week of manual analysis',
       'Optimized 600 GB/day data pipeline, improving throughput by 86%',
       'Reduced legacy system alarms/crashes by ~95%',
     ],
   },
   {
+    company: 'Acumei',
+    url: 'https://acumei.com',
+    location: 'Manchester, UK',
+    position: 'Founder',
+    period: '2025 \u2013 Present',
+    bullets: [
+      'Building AI automation ("AI Brain") for British SMEs \u2014 agentic pipelines handling calls, dispatch, rebooking, stock, and invoicing across CRM, POS, and diary systems',
+      'Shipped production integrations for plumbing, hospitality, and salon clients: 14-second avg dispatch, 24% food-waste reduction, 7x weekly rebookings',
+      'End-to-end custom builds in 3\u201314 days with full code/prompt ownership and GDPR-compliant data handling',
+    ],
+  },
+  {
+    company: 'Ovalens',
+    url: 'https://ovalens.com',
+    location: 'London, UK',
+    position: 'Founder & CTO',
+    period: 'Jan 2025 \u2013 April 2025',
+    bullets: [
+      'Raised \u00A37k through a hackathon win',
+      'Implemented a deterministic UK tax engine (16 modules) incl. income tax, NI, AA, HICBC, loans, ANI, BED/ISA',
+      'Shipped Claude-powered chat (streaming) with 6 tools for modelling, dashboards, and note search',
+      'Delivered 30+ REST APIs, async processing via Redis, 280+ tests, and production observability with Sentry',
+    ],
+  },
+  {
     company: 'Google DeepMind',
+    url: 'https://deepmind.google',
     location: 'Birmingham, UK',
     position: 'Research Intern',
     period: 'July 2024 \u2013 Aug 2024',
@@ -27,6 +53,7 @@ const experiences = [
   },
   {
     company: 'Aston University',
+    url: 'https://www.aston.ac.uk',
     location: 'Birmingham, UK',
     position: 'Teaching Assistant',
     period: 'Oct 2023 \u2013 July 2024',
@@ -86,7 +113,11 @@ export default function Experience() {
             </div>
             <div className="exp-body">
               <h3 className="exp-position">{exp.position}</h3>
-              <div className="exp-company">{exp.company}</div>
+              <div className="exp-company">
+                {exp.url ? (
+                  <a href={exp.url} target="_blank" rel="noopener noreferrer">{exp.company}</a>
+                ) : exp.company}
+              </div>
               <ul className="exp-bullets">
                 {exp.bullets.map((bullet, j) => (
                   <li key={j}>{highlightNumbers(bullet)}</li>

@@ -1104,6 +1104,19 @@
   font-weight: 400;
 }
 
+.exp-company a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(201, 168, 76, 0.4);
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+.exp-company a:hover {
+  color: var(--accent-hover);
+  text-decoration-color: var(--accent-hover);
+}
+
 .exp-bullets {
   list-style: none;
   padding: 0;
