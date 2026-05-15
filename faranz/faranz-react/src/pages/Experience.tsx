@@ -31,7 +31,7 @@ const experiences = [
     url: 'https://ovalens.com',
     location: 'London, UK',
     position: 'Founder & CTO',
-    period: 'Jan 2025 \u2013 April 2025',
+    period: 'Jan 2026 \u2013 April 2026',
     bullets: [
       'Raised \u00A37k through a hackathon win',
       'Implemented a deterministic UK tax engine (16 modules) incl. income tax, NI, AA, HICBC, loans, ANI, BED/ISA',
