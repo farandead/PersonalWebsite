@@ -1,0 +1,21 @@
+:root {
+  --t-bg: #0a0a0f;
+  --t-fg: #c0caf5;
+  --t-prompt-user: #7aa2f7;
+  --t-prompt-path: #9ece6a;
+  --t-prompt-symbol: #bb9af7;
+  --t-accent1: #7dcfff;
+  --t-accent2: #9ece6a;
+  --t-accent3: #e0af68;
+  --t-accent4: #bb9af7;
+  --t-accent5: #f7768e;
+  --t-dimmed: #565f89;
+  --t-border: #15151f;
+  --t-title-bar-bg: #06060a;
+  --t-title-bar-fg: #565f89;
+  --t-tab-bg: #08080d;
+  --t-tab-active-bg: #15151f;
+  --t-tab-active-fg: #c0caf5;
+  --t-selection-bg: #283457;
+  --t-scrollbar-thumb: #15151f;
+}
