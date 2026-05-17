@@ -1,12 +1,23 @@
 import { registerCommand } from './registry';
 import { cat as catFile } from '../fs/vfs';
+const CAT_ASCII = `
+  /\\_/\\
+ ( o.o )
+  > ^ <
+ /|   |\\
+(_|   |_)
+`;
 
 registerCommand('echo', (args) => ({
   output: [<span>{args.join(' ')}</span>],
 }));
 
 registerCommand('whoami', () => ({
-  output: [<span className="c-accent1">faran</span>],
+  output: [
+    <pre className="c-accent1">{CAT_ASCII}</pre>,
+    <span className="c-accent1 c-bold">Faran Zafar</span>,
+    <span className="c-dimmed">Software Engineer · AI Specialist · 6x Hackathon Winner</span>,
+  ],
 }));
 
 registerCommand('date', () => ({
@@ -41,40 +52,42 @@ registerCommand('which', (args) => {
   return { output: [<span className="c-accent5">{cmd} not found</span>] };
 });
 
-registerCommand('neofetch', () => ({
-  output: [
-    <pre className="c-accent1">{`
-        .--.         faran@portfolio
-       |o_o |        ───────────────
-       |:_/ |        OS: faran-os 2.0.26
-      //   \\ \\       Host: terminal-portfolio
-     (|     | )      Shell: faran-sh 1.0
-    /'\\_   _/\`\\      Theme: dynamic
-    \\___)=(___/      Terminal: Web/React 19
-                     Uptime: since you opened this tab
-`}</pre>,
-    <table className="cmd-table">
-      <tbody>
-        <tr>
-          <td><span className="c-accent2">Languages</span></td>
-          <td>Python, TypeScript, Java, SQL, C#</td>
-        </tr>
-        <tr>
-          <td><span className="c-accent2">Focus</span></td>
-          <td>Multi-Agent Systems, RAG, LLM Engineering</td>
-        </tr>
-        <tr>
-          <td><span className="c-accent2">Projects</span></td>
-          <td>13 shipped</td>
-        </tr>
-        <tr>
-          <td><span className="c-accent2">Hackathons</span></td>
-          <td>6x Winner</td>
-        </tr>
-      </tbody>
-    </table>,
-  ],
-}));
+registerCommand('neofetch', () => {
+  const infoLines = [
+    ['', 'faran@portfolio'],
+    ['', '───────────────'],
+    ['OS', 'faran-os 2.0.26'],
+    ['Host', 'terminal-portfolio'],
+    ['Shell', 'faran-sh 1.0'],
+    ['Theme', 'dynamic (type "theme")'],
+    ['Terminal', 'Web/React 19'],
+    ['Uptime', 'since you opened this tab'],
+    ['', ''],
+    ['Languages', 'Python, TypeScript, Java, C++, PHP, SQL, C#'],
+    ['Focus', 'Multi-Agent Systems, RAG, LLM Engineering'],
+    ['Projects', '13 shipped'],
+    ['Hackathons', '6x Winner'],
+  ];
+
+  return {
+    output: [
+      <div className="about-layout" style={{ gap: '16px' }}>
+        <pre className="c-accent1" style={{ whiteSpace: 'pre', lineHeight: '1.3' }}>{CAT_ASCII}</pre>
+        <div style={{ paddingTop: '4px', fontSize: '12px', lineHeight: '1.6' }}>
+          {infoLines.map(([key, val], i) => (
+            <div key={i}>
+              {key ? (
+                <><span className="c-accent2">{key}</span><span className="c-dimmed">: </span><span>{val}</span></>
+              ) : (
+                <span className={i === 0 ? 'c-accent1 c-bold' : ''}>{val}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>,
+    ],
+  };
+});
 
 registerCommand('grep', (args) => {
   if (args.length < 2) {

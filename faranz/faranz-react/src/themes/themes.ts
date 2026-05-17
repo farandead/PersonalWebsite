@@ -177,7 +177,7 @@ export const themes: Theme[] = [
   },
 ];
 
-export const DEFAULT_THEME_ID = 'tokyo-night';
+export const DEFAULT_THEME_ID = 'gruvbox';
 
 export function getThemeById(id: string): Theme | undefined {
   return themes.find(t => t.id === id);
